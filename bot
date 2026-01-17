@@ -1,4 +1,7 @@
 import discord
 from discord.ext import commands
 
-bot = discord.intents.all()
+intents = discord.intents.all()
+bot = commands.Bot(".", intents=intents)
+
+bot.run("")
